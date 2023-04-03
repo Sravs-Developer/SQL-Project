@@ -1,0 +1,93 @@
+Use Sravanthi;
+
+Create table Question(
+S_No int,
+Module_Id varchar(300),
+QuestionId int,
+Questiondescription varchar(500),
+Option1 varchar(100),
+Option2 varchar(100),
+Option3 varchar(100),
+Option4 varchar(100),
+Correct_Answer varchar(200),
+Marks_Assigned double);
+
+insert into Question values('1001', 01,'Which of the following option leads to the portability and security of Java?',
+'Bytecode is executed by JVM', 'The applet makes the Java code secure and portable', 'Use of exception handling',
+ 'Dynamic binding between objects', 'Bytecode is executed by JVM', 5);
+ insert into Question values('1002', 02, 'Which of the following is not a Java features?',
+ 'Dynamic', 'Architecture Neutral', 'Use of pointers', 'Object-oriented', 'Use of pointers', 3);
+insert into Question values('1003', 03, 'Who invented Java Programming?', 'Guido van Rossum',
+' James Gosling', 'Dennis Ritchie','Bjarne Stroustrup', 'James Gosling', 4);
+insert into Question values('1004', 04, 'Which statement is true about Java?', ' Java is a sequence-dependent programming language',
+'Java is a code dependent programming language','Java is a platform-dependent programming language',
+'Java is a platform-independent programming language','Java is a platform-independent programming language', '4');
+insert into Question values('1005', 05,' What will be the output of the following Java code?
+
+    class increment {
+        public static void main(String args[]) 
+        {        
+             int g = 3;
+             System.out.print(++g * 8);
+        } 
+    }', '32', '33', '24', '25', '32', 6);
+insert into Question Values('1006', 06, 'Which environment variable is used to set the java path?',
+'MAVEN_Path','JavaPATH','JAVA','JAVA_HOME', 'JAVA_HOME', 2);
+insert into Question values('1007', 07, ' What will be the output of the following Java program?
+
+class output {
+        public static void main(String args[]) 
+        {
+            double a, b,c;
+            a = 3.0/0;
+            b = 0/4.0;
+            c=0/0.0;
+ 
+	    System.out.println(a);
+            System.out.println(b);
+            System.out.println(c);
+        } 
+    }', 'NaN', 'Infinity', '0.0', 'all of the mentioned', 'all of the mentioned',8);
+insert into Question Values('1008', 08, 'Which of the following is not an OOPS concept in Java?',
+'Polymorphism','Inheritance','Compilation','Encapsulation', 'Compilation', 3);
+insert into Question values('1009', 09, 'What will be the output of the following Java program?
+
+    class variable_scope 
+    {
+        public static void main(String args[]) 
+        {
+            int x;
+            x = 5;
+            {
+	        int y = 6;
+	        System.out.print(x + " " + y);
+            }
+            System.out.println(x + " " + y);
+        } 
+    }', 'Compilation error','Runtime error','5 6 5 6', '5 6 5', 'Compilation error',6);
+    insert into Question values('1010', 10,'What will be the output of the following Java program?
+
+    class recursion 
+    {
+        int func (int n) 
+        {
+            int result;
+            if (n == 1)
+                return 1;
+            result = func (n - 1);
+            return result;
+        }
+    } 
+    class Output 
+    {
+        public static void main(String args[]) 
+        {
+            recursion obj = new recursion() ;
+            System.out.print(obj.func(5));
+        }
+    }', '1','120','0','None of the mentioned', '1', 8);
+
+Alter table Question
+Drop column S_No;
+
+Select * from Question;

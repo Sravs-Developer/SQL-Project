@@ -1,0 +1,40 @@
+Use sravanthi;
+
+Create table Faculty(
+FacultyId int,
+FacultyName varchar(100),
+FacultyDOB varchar(100),
+FacultyGender char(10),
+Facultyhighest_qualification varchar(200),
+FacultyCertificate varchar(100),
+FacultyExperience double,
+FacultySubject_can_Teach varchar(50),
+FacultyEmail varchar(100),
+FacultyPhone_Number int,
+FacultyAddress varchar(200),
+FacultySalary int,
+FacultyPassword varchar(100));
+
+insert into Faculty values(1001, 'Gayatri', '1983-06-26', 'Female', 'MCA', 'Regular', 5,'English', 
+'gayatri022@gmail.com', 86594203, 'Visakhapatnam, AP', 25000, 'GAYA@22');
+insert into Faculty values(1002, 'Ram Kumar', '1990-03-12', 'Male', 'B.Tech', 'Regular', 3.5,
+'Java Full Stack', 'ramkumar@gmail.com', 90059420, 'Maddilipalem, Vsp, AP', 30000, 'RAM@25');
+insert into Faculty values(1003, 'Prem Sagar', '1994-05-06', 'Male', 'M.Tech', 'Distance', 6,
+'DotNET Full Stack', 'Prem26@gmail.com', 964694203, 'Sagar nagar, Vsp, AP', 40000, 'PREM@93');
+insert into Faculty values(1004, 'Venu Gopal', '1980-12-22', 'Male', 'BSE', 'Distance', 3,
+'Digital Marketing', 'venug12@gmail.com', 865952031, 'Pendurti, Vsp, AP', 45000, 'VENU@05');
+insert into Faculty values(1005, 'Madhu', '1986-11-05', 'Male', 'B.Com', 'Regular', 4.5,
+'UI/UX Developer','madhu01@gmail.com', 825904203, 'Dwarakanagar, Vsp, AP', 35000, 'MADHU@03');
+insert into Faculty values(1006, 'Ramya', '1993-08-16', 'Female', 'M.Tech', 'Regular', 6,
+'PHP Developer','ramya02@gmail.com', 630659420, 'Madurawada, Vsp, AP', 50,000, 'RAMYA@50');
+insert into Faculty values(1007, 'Sravani', '1980-02-11', 'Female', 'MSC', 'Distance', 2.5,
+'AWS','sravani03@gmail.com', 986594203, 'HB Colony Vsp AP', 50000, 'SRAV@05');
+insert into Faculty values(1008, 'Vamsi Krishna', '1985-10-09', 'Male', 'MCA', 'Regular', 6.5,
+'Graphic Designer','vamsikrishna11@gmail.com', 630594203, 'Malkapet, Hyderabad', 60000, 'VAMSI@50');
+insert into Faculty values(1009, 'Lalitha', '1996-08-11', 'Female', 'B.Tech', 'Distance', 4,
+'SAP', 'Lalitha25@gmail.com', 920594203, 'Kanada, AP', 50000, 'LALI@63');
+insert into Faculty values(1010, 'Mallikharjun', '1995-05-24', 'Male', 'M.Tech', 'Regular', 5.5,
+'Java Full Stack','mallikharjun05@gmail.com', 96422035, 'Siripuram, Vsp, AP', 60000, 'Mallik@09');
+
+select * from Faculty;
+Alter table Faculty Rename column FacultyGenger to FacultyGender;  
